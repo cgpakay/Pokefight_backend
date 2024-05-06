@@ -14562,12 +14562,6 @@ const pokedex = [
     },
   },
 ];
-// for (let pokemon of pokedex) {
-//   pokemon.imageUrl = `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/${pokemon.id}.png`;
-
-//   pokemon.backImg = `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/back/${pokemon.id}.gif`;
-//   pokemon.frontImg = `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/${pokemon.id}.gif`;
-// }
 
 const pokemonsToSave = pokedex.map((pokemon) => ({
   id: pokemon.id,
@@ -14588,9 +14582,8 @@ const pokemonsToSave = pokedex.map((pokemon) => ({
     frontImg: `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/${pokemon.id}.gif`,
   },
 }));
-console.log(pokemonsToSave);
+
 module.exports = {
   pokedex,
   pokemonsToSave,
 };
-// export  pokedex;
